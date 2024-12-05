@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagen del cuento -->
+    <ImageView
+        android:id="@+id/imageCuento"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del cuento"
+        android:src="@drawable/ic_placeholder_image" /> <!-- Usa un placeholder mientras no tengas imágenes -->
+
+    <!-- Título del cuento -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Sinopsis del cuento -->
+    <TextView
+        android:id="@+id/textSinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Texto "Capítulos:" -->
+    <TextView
+        android:id="@+id/textCapitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capítulos:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- ListView de escenas -->
+    <ListView
+        android:id="@+id/listViewEscenas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp" />
+
+    <!-- Botón para iniciar el cuento -->
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+</LinearLayout>
